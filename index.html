@@ -14,7 +14,7 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -42,11 +42,11 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">What is Decentraweb</a></li>
-          <li><a class="nav-link scrollto" href="#about">Solution</a></li>
-          <li><a class="nav-link scrollto" href="#services">How it works</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">RoadMap</a></li>
-          <li><a class="nav-link scrollto" href="#team">Tokenomics</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">team</a></li>
+          <li><a class="nav-link scrollto" href="#solution">Solution</a></li>
+          <li><a class="nav-link scrollto" href="#blockchain">How it works</a></li>
+          <li><a class="nav-link scrollto " href="#roadmap">RoadMap</a></li>
+          <li><a class="nav-link scrollto" href="#tokenomics">Tokenomics</a></li>
+          <li><a class="nav-link scrollto" href="#team">team</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -58,17 +58,16 @@
   <section id="dweb" class="d-flex justify-cntent-center align-items-center">
     <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-6 align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+          <div class="col-md-8 col-lg-7 align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
             <p class="title">DecentraWeb is a decentralized</p>
-            <h2 class="">Implementation of the <strong>DNS base 
-              layer protocol on the Ethereum Blockchain.</strong></h2>
+            <h2><span>Implementation of the</span> DNS base 
+              layer protocol on the Ethereum Blockchain.</h2>
             <p class="description">Committed to taking back the internet, one layer at a time...</p>
             <div class="registration">
               <a href="#" class="btn btn-primary active rounded-pill px-4 py-2" role="button" aria-pressed="true">Buy DWEB Tokens</a>
-              <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2 ms-2" role="button" aria-pressed="true">Register Domains</a>
+              <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2" role="button" aria-pressed="true">Register Domains</a>
             </div>
           </div>
-          <!-- <div class="dweb-img"></div> -->
         </div>
     </div>
   </section>
@@ -112,10 +111,14 @@
         </div>
 
         <div class="row content">
-
+          <div class="col-sm-12">
+            <div class="dweb-logo">
+              <img src="assets/img/small-logo.png" alt="">
+            </div>
+          </div>
           <div class="col-md-4">
             <div class="block">
-              <div class="shadow-circle float-end"><img src="assets/img/icons/building-line.png"></div>
+              <div class="shadow-circle"><img src="assets/img/icons/building-line.png"></div>
               <div class="text-end">
                 <h6>Corporations & Businesses</h6>
                 <p>Buy and own a completely custom Top-Level-Domain (TLD) like .tesla .apple or .bobsappliances.</p>
@@ -123,7 +126,7 @@
             </div>
 
             <div class="block btm">
-              <div class="shadow-circle float-end"><img src="assets/img/icons/open-arm-line.png"></div>
+              <div class="shadow-circle"><img src="assets/img/icons/open-arm-line.png"></div>
               <div class="text-end">
                 <h6>Freedom Seekers & Privacy Enthusiasts</h6>
                 <p>Never worry about censorship or removal of your domain(s) and content, while providing pseudonymous ownership. </p>
@@ -131,13 +134,13 @@
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 d-none d-md-block">
             <img src="assets/img/decentaweb2.png" alt="" class="w-100">
           </div>
 
           <div class="col-md-4">
             <div class="block">
-              <div class="shadow-circle float-start"><img src="assets/img/icons/group-line.png"></div>
+              <div class="shadow-circle"><img src="assets/img/icons/group-line.png"></div>
               <div class="">
                 <h6>Individuals</h6>
                 <p>Purchase your own name or keywords for TLDs.  
@@ -146,7 +149,7 @@
             </div>
 
             <div class="block btm">
-              <div class="shadow-circle float-start"><img src="assets/img/icons/vector.png"></div>
+              <div class="shadow-circle"><img src="assets/img/icons/vector.png"></div>
               <div class="">
                 <h6>Stakers</h6>
                 <p>Users who lock their tokens to earn passive returns on sales of products and services, and those who operate DNS nodes on the DecentraWeb network. </p>
@@ -231,7 +234,8 @@
 
     <!-- ======= Solution ======= -->
     <section id="solution" class="solution">
-      <div class="container-fluid">
+      
+      <div class="container">
         <div class="row">
           <h1 class="text-center">Solution</h1>
           <div class="col-md-6 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
@@ -255,9 +259,9 @@
               </div>
             </div>
           </div>
-
         </div>
-        <div class="row blockchain">
+        
+        <div class="row blockchain" id="blockchain">
           <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
             <div class="content">
               
@@ -307,7 +311,10 @@
     <!-- End Solution Section -->
 
     <!-- ======= Road Map Section ======= -->
-    <section id="roadmap" class="roadmap section-bg">
+    <section id="roadmap" class="roadmap">
+      <div class="slogo">
+        <img src="assets/img/small-logo.png" alt="">
+      </div>  
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -401,19 +408,20 @@
           <h6>About Our</h6>
           <div class="headline">&nbsp;</div>
           <h2>Tokenomics</h2>
-          <p>The DWEB token will play a crucial role in the DecentraWeb ecosystem, and will be used for payment for products & services, governance, DNS Validator Nodes, Staking & more.</p>
+          <p>The DWEB token will play a crucial role in the DecentraWeb ecosystem, and will be used for payment for products &amp; services, governance, DNS Validator Nodes, Staking & more.</p>
         </div>
 
         <div class="row">
-          <div class="col-md-6">
-            <img src="assets/img/dweb_token.png" alt="" class="w-100">
-          </div>
-          <div class="col-md-6">
+          <div class="col-md-6 order-md-2">
             <div class="content">
               <h3>DWEB Token</h3>
               <p>The proceeds for all domain, hosting, and other sales of products and services will be distributed as follows:</p>
             </div>
           </div>
+          <div class="col-md-6 order-md-1">
+            <img src="assets/img/dweb_token.png" alt="" class="w-100">
+          </div>
+          
         </div>
       </div>
     </section>
@@ -445,14 +453,14 @@
     <!-- End Transfer Fees Section -->
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
+    <section id="team" class="team">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h6>Our</h6>
           <div class="headline">&nbsp;</div>
           <h2>Team</h2>
-          <p>We have built an executive and advisory team with extensive experience in the domain, DNS, security and blockchain space with team members hailing from GoDaddy, Intel, Dow Jones, Microsoft, Dell, ServiceNow, Bloomberg, HP, Deloitte, TrustSwap, Coin Market Cap (CMC) & others.</p>
+          <p>We have built an executive and advisory team with extensive experience in the domain, DNS, security and blockchain space with team members hailing from GoDaddy, Intel, Dow Jones, Microsoft, Dell, ServiceNow, Bloomberg, HP, Deloitte, TrustSwap, Coin Market Cap (CMC) &amp; others.</p>
         </div>
 
         <div class="row">
@@ -683,23 +691,24 @@
             <h4>Useful Links</h4>
             <div class="link-section">
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Solution</a></li>
-                <li><a href="#">Roadmap</a></li>
-                <li><a href="#">Tokenomics</a></li>
+                <li><a href="#dweb">Home</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#tokenomics">Tokenomics</a></li>
               </ul>
             </div>
             <div class="link-section">
               <ul>
-                <li><a href="#">What Is DecentraWeb</a></li>
-                <li><a href="#">How It Works</a></li>
+                <li><a href="#about">What Is DecentraWeb</a></li>
+                <li><a href="#blockchain">How It Works</a></li>
                 <li><a href="#">Deck</a></li>
-                <li><a href="#">Team</a></li>
+                <li><a href="#team">Team</a></li>
               </ul>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-contact">
+            <h2>Follow Us On</h2>
              <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>

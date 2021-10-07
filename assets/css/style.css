@@ -2,7 +2,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #444444;
 }
 
@@ -358,7 +358,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #dweb {
   width: 100%;
-  height: 85vh;
+  height: 120vh;
   overflow: hidden;
   position: relative;
   background: url("../img/ilustration_banner.png") bottom right no-repeat, url("../img/top_bg.jpg") bottom center no-repeat, linear-gradient(261.51deg, #7E02DF -31.95%, #1E21AB 79.36%) top center;
@@ -367,18 +367,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   transition: 0.3s;
 }
-
-#dweb .dweb-img {
-  background: url("../img/ilustration_banner.png");
-  background-size:  cover;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 512px;
-  width: 600px;
-}
 #dweb .title {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -390,14 +380,21 @@ h1, h2, h3, h4, h5, h6 {
 #dweb h2 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 700;
+  font-family: 'Montserrat';
+  letter-spacing: 2px;
+}
+#dweb h2 span {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 48px;
 }
 #dweb p {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
 }
 #dweb .carousel-control-prev, #dweb .carousel-control-next {
   width: 10%;
@@ -411,40 +408,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #dweb .registration a{
-  font-size: 12px; 
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 20px 40px;
+  height: 50px;
+  line-height: 30px; 
+}
+#dweb .registration a:last-child {
+  margin-left: 10px;
 }
 
-#dweb .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 50px;
-  transition: 0.5s;
-  line-height: 1;
-  margin: 10px;
-  color: #fff;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-  border: 2px solid #f6b024;
-}
-#dweb .btn-get-started:hover {
-  background: #f6b024;
-  color: #fff;
-  text-decoration: none;
-}
-@media (min-width: 1024px) {
- 
-}
-@media (max-width: 768px), (max-height: 700px) {
+@media (max-width: 768px) {
   #dweb {
     height: 120vh;
     padding: 100px 0;
+    background: url("../img/top_bg.jpg") bottom left no-repeat, linear-gradient(261.51deg, #7E02DF -31.95%, #1E21AB 79.36%) top center;
+    background-size: cover, cover;
   }
   #dweb h2 {
-    font-size: 28px;
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+  #dweb h2 span {
+    font-size: 40px;
+  }
+  .registration a{
+    margin: 10px auto;
+    font-size: 16px;
+    padding: 40px 60px !important;
+    height: 50px;
+    line-height: 0px !important; 
+    width: 100%;
+  }
+  #dweb .registration a:last-child {
+    margin-left: 0px;
   }
 }
 
@@ -467,8 +465,10 @@ section {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #161616;
+  font-family: 'Montserrat';
 }
 .section-title h2 {
+  font-family: 'Montserrat';
   font-size: 34px;
   line-height: 41px;
   text-transform: capitalize;
@@ -484,6 +484,7 @@ section {
   margin-bottom: 5px;
 }
 .section-title p {
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -491,7 +492,30 @@ section {
   text-align: center;
   text-transform: capitalize;
   color: #161616;
-  opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+  .section-title h6 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .headline{
+    margin-bottom: 20px;
+  }
+  .section-title h2 {
+    font-size: 34px;
+    line-height: 41px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .section-title p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -598,14 +622,18 @@ section {
   color: #05579e;
 }
 .problem .description {
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 28px;
   color: #161616;
-  opacity: 0.6;
 }
-
+@media (max-width: 768px) {
+  .problem .content {
+    padding: 40px 10px;
+  }
+}
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
@@ -637,33 +665,73 @@ section {
   height: 145px;
 }
 .about .block .shadow-circle {
-  height: 60px;
-  width: 60px;
-  line-height: 60px;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
   border-radius: 50%;
   text-align: center;
   background: #FFFFFF;
   box-shadow: 0px 4px 24px rgba(41, 152, 249, 0.15);
+  margin: 30px auto;
   display: none;
 }
 .about .block h6 {
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
 }
 .about .block p {
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  color: #161616;
 }
 .about .block.btm {
   margin-top: 150px;
 }
-@media (max-width: 992px) {
+.dweb-logo{
+  margin: 30px auto 60px;
+  height: 160px;
+  width: 160px;
+  line-height: 160px;
+  background: #FFF;
+  box-shadow: 0px 0px 90px #2998F9, 0px 0px 250px #2998F9;
+  display: none;
+  border-radius: 50%;
+  text-align: center;
+}
+@media (max-width: 768px) {
   .about {
     padding: 60px 0;
+  }
+  .about .block h6 {
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .about .block p {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .about .block.btm {
+    margin-top: 10px;
+  }
+  .dweb-logo{
+    display: block;
+  }
+  .about .block {
+    height: auto;
+    margin: 50px 0;
+  }
+  .about .block .shadow-circle {
+    display: block;
   }
 }
 
@@ -673,10 +741,13 @@ section {
 # Why Us
 --------------------------------------------------------------*/
 .solution {
-  background: url("../img/union.jpg") top center no-repeat;;
-  padding: 0;
+  background: url("../img/Union.jpg") top center no-repeat, url("../img/solution_bottom.jpg") bottom center no-repeat;
+  background-size: cover, cover;
+  padding: 0 0 80px 0;
   color: #FFF;
+  position: relative;
 }
+
 .solution .content {
   padding: 0px 10px 0 10px;
 }
@@ -776,6 +847,17 @@ section {
 .blockchain .headline {
   margin: 0;
 }
+.blockchain .registration a{
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 20px 60px;
+  height: 50px;
+  line-height: 32px; 
+}
+.blockchain .registration a:last-child {
+  margin-left: 10px;
+}
 .points{
   color: #FFF;
   width: 100%;
@@ -799,57 +881,70 @@ section {
   font-size: 14px;
   line-height: 24px;
   color: #FFFFFF;
-  width: 80%;
+  width: calc(100% - 100px);
   margin: 8px 20px;
 }
 .blockchain .registration{
   margin-top: 40px;
 }
-@media (max-width: 1024px) {
-  
-}
-@media (max-width: 992px) {
-  .solution .content {
-    padding-top: 30px;
+@media (max-width: 768px) {
+  .solution h1{
+    font-size: 90px;
   }
-}
+  .solution h5 {
+    font-size: 26px;
+    text-align: center;
+    margin: 60px auto 30px;
+  }
+  .solution .content p {
+    font-size: 20px;
+    line-height: 32px;
+    width: 100%;
+    text-align: center;
+  }
+  .blockchain .content p {
+    font-size: 20px;
+    line-height: 32px;
+    width: 100%;
+    text-align: center;
+  }
+  .blockchain .title h6 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 60px 0 20px 0;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  .blockchain h2{
+    font-size: 34px;
+    line-height: 41px;
+    margin: 20px 0 40px 0;
+    text-align: center;
+  }
+  .blockchain h4{
+    font-family: 'Montserrat';
+    font-size: 34px !important;
+    font-weight: bold;
+    line-height: 41px;
+    margin: 20px 0 40px 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .blockchain .headline {
+    margin: 0 auto;
+  }
+  .blockchain .registration a{
+    font-size: 16px;
+    padding: 40px 60px !important;
+    height: 50px;
+    line-height: 0px; 
+    width: 100%;
+  }
+  .blockchain .registration a:last-child {
+    margin-left: 0px !important;
+  }
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
-  margin-bottom: 20px;
-  padding: 50px 40px;
-  border-radius: 6px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
-.services .icon-box i {
-  float: left;
-  color: #f6b024;
-  font-size: 40px;
-  line-height: 0;
-}
-.services .icon-box h4 {
-  margin-left: 70px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-.services .icon-box h4 a {
-  color: #05579e;
-  transition: 0.3s;
-}
-.services .icon-box h4 a:hover {
-  color: #0880e8;
-}
-.services .icon-box p {
-  margin-left: 70px;
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
 
 /*--------------------------------------------------------------
 # Team
@@ -888,7 +983,7 @@ section {
   padding-bottom: 10px;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 24px;
   text-align: center;
   color: #2998F9;
@@ -910,13 +1005,12 @@ section {
 .tokenomics .content {
   padding: 100px 20px;
 }
-.tokenommics .content h3 {
+.tokenomics .content h3 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
   line-height: 41px;
-  text-align: center;
   color: #161616;
 }
 .tokenomics .content p {
@@ -929,6 +1023,21 @@ section {
   color: #737373;
   width: 70%;
 }
+
+@media (max-width: 768px) {
+  .tokenomics .content h3 {
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+  }
+  .tokenomics .content p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
@@ -1034,7 +1143,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: url("../img/bg_footer.jpg") top center;
+  background: url("../img/bg_footer.jpg") top center no-repeat;
+  background-color: #1E21AB;
   /* background: linear-gradient(260.25deg, #7E02DF 9.87%, #1E21AB 32.49%, #02047A 71.29%);
   mix-blend-mode: normal; */
   padding: 30px 0 30px 0;
@@ -1046,6 +1156,7 @@ section {
 }
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 #footer .footer-top .footer-info h3 {
   font-size: 18px;
@@ -1058,7 +1169,8 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  margin-top: 10px;
+  font-family: 'Montserrat';
   color: #fff;
 }
 #footer .link-section{
@@ -1094,6 +1206,7 @@ section {
 }
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 #footer .footer-top .footer-links ul {
   list-style: none;
@@ -1128,6 +1241,17 @@ section {
 }
 #footer .footer-top .footer-contact p {
   line-height: 26px;
+}
+.footer-contact h2{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 30px;
 }
 #footer .copyright {
   float: left;
@@ -1180,12 +1304,49 @@ section {
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  #footer {
+    padding:  30px 0 60px 0;
+  }
+  .footer-info {
+    text-align: center;
+  }
+  .copyright{
+    width: 100%;
+    text-align: center;
+  }
+  .credits {
+    width: 100%;
+    margin: 10px auto 10px;
+    text-align: center;
+    width: 350px;
+  }
+  .footer-info,
+  .footer-links,
+  .footer-contact{
+    margin-bottom: 10px !important;
+  } 
+}
 
 /*--------------------------------------------------------------
 # Roadmap
 --------------------------------------------------------------*/
 .roadmap {
+  overflow: unset;
+  position: relative;
+}
 
+.slogo {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  position: absolute;
+  top: -60px;
+  left: calc(50% - 50px);
+  text-align: center;
+  background:#FFF;
+  border-radius: 50%;
+  box-shadow: 0px 0px 50px #2998F9, 0px 0px 100px #2998F9;
 }
 
 .cd-horizontal-timeline {
