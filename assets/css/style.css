@@ -673,7 +673,7 @@ section {
 # Why Us
 --------------------------------------------------------------*/
 .solution {
-  background: url("../img/union.jpg") top center no-repeat;;
+  background: url("/img/union.jpg") top center no-repeat;;
   padding: 0;
   color: #FFF;
 }
