@@ -359,7 +359,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 120vh;
   overflow: hidden;
   position: relative;
-  background: url("../img/ilustration_banner.png") bottom right no-repeat, url("../img/top_bg.jpg") bottom center no-repeat, linear-gradient(261.51deg, #7E02DF -31.95%, #1E21AB 79.36%) top center;
+  background: url("../img/globe.png") bottom right no-repeat, url("../img/top_bg.jpg") bottom center no-repeat, linear-gradient(261.51deg, #7E02DF -31.95%, #1E21AB 79.36%) top center;
   background-size: 50%, cover, cover;
   /* background: linear-gradient(261.51deg, #7E02DF -31.95%, #1E21AB 79.36%); */
   mix-blend-mode: normal;
