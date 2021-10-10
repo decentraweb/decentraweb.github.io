@@ -439,6 +439,7 @@ h1, h2, h3, h4, h5, h6 {
 .vertical a {
   color: #FFF;
   cursor: pointer;
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
@@ -449,7 +450,8 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover, cover;
   }
   #dweb h2 {
-    font-size: 40px;
+    font-size: 36px;
+    line-height: 42px;
     letter-spacing: 2px;
   }
   #dweb h2 span {
@@ -460,7 +462,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     padding: 40px 60px !important;
     height: 50px;
-    line-height: 0px !important; 
+    line-height: 22px !important; 
     width: 100%;
   }
   #dweb .registration a:last-child {
@@ -524,7 +526,7 @@ section {
 
 @media (max-width: 768px) {
   .section-title h6 {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     line-height: 20px;
     margin-bottom: 20px;
@@ -533,15 +535,15 @@ section {
     margin-bottom: 20px;
   }
   .section-title h2 {
-    font-size: 34px;
-    line-height: 41px;
+    font-size: 28px;
+    line-height: 34px;
     font-weight: 700;
     margin-bottom: 20px;
   }
   .section-title p {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 34px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -633,6 +635,14 @@ section {
   transition: all 0.3s ease-in-out;
 }
 .problem .content p{
+  color: rgba(22, 22, 22, 0.7);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
   color: rgba(22, 22, 22, 0.7);
 }
 .news_logo .publish-date {
@@ -742,15 +752,15 @@ section {
     padding: 60px 0;
   }
   .about .block h6 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
     text-align: center;
     font-weight: 700;
     margin-bottom: 20px;
   }
   .about .block p {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 24px;
     text-align: center;
   }
   .about .block.btm {
@@ -907,6 +917,8 @@ section {
   width: 100%;
   float: left;
   margin: 10px 0;
+  display: flex;
+  align-items: center;
 }
 .wt-circle {
   height: 60px;
@@ -934,23 +946,33 @@ section {
 @media (max-width: 768px) {
   .solution h1{
     font-size: 90px;
+    line-height: 164px;
   }
   .solution h5 {
-    font-size: 26px;
+    font-size: 24px;
+    line-height: 29px;
     text-align: center;
     margin: 60px auto 30px;
   }
   .solution .content p {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 30px;
     width: 100%;
     text-align: center;
   }
   .blockchain .content p {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 30px;
     width: 100%;
     text-align: center;
+  }
+  .solution .quote > span {
+    font-size: 18px;
+    line-height: 36px;
+  }
+  .solution .quoteby span {
+    font-size: 18px;
+    line-height: 22px;
   }
   .blockchain .title h6 {
     font-size: 14px;
@@ -960,8 +982,8 @@ section {
     letter-spacing: 3px;
   }
   .blockchain h2{
-    font-size: 34px;
-    line-height: 41px;
+    font-size: 28px;
+    line-height: 34px;
     margin: 20px 0 40px 0;
     text-align: center;
   }
@@ -981,7 +1003,7 @@ section {
     font-size: 16px;
     padding: 40px 60px !important;
     height: 50px;
-    line-height: 0px; 
+    line-height: 4px !important; 
     width: 100%;
   }
   .blockchain .registration a:last-child {
@@ -1009,6 +1031,7 @@ section {
 }
 .team .member .pic img {
   transition: ease-in-out 0.3s;
+  cursor: pointer;
 }
 .team .member .pic .social i {
   font-size: 28px;
@@ -1081,12 +1104,12 @@ section {
 
 @media (max-width: 768px) {
   .tokenomics .content h3 {
-    font-size: 34px;
-    line-height: 41px;
+    font-size: 28px;
+    line-height: 34px;
     text-align: center;
   }
   .tokenomics .content p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     width: 100%;
     text-align: center;
@@ -1389,10 +1412,10 @@ section {
     text-align: center;
   }
   .credits {
-    width: 100%;
     margin: 10px auto 10px;
-    text-align: center;
-    width: 350px;
+    width: 240px;
+    float: none !important;
+    line-height: 40px !important;
   }
   .footer-info,
   .footer-links,
@@ -1866,6 +1889,21 @@ section {
   color: rgba(22, 22, 22, 0.7);
   width: 80%;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .modal-body p{ 
+    font-size: 16px;
+  }
+  .modal-header h5 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .modal-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
 }
 
 
