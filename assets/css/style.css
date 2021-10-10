@@ -786,7 +786,7 @@ section {
 .solution {
   background: url("../img/how_its_works.png") 2px 85% no-repeat, url("../img/union.jpg") top center no-repeat;
   background-size: 150px 464px, cover;
-  padding: 0 0 80px 0;
+  padding: 120px 0 80px 0;
   color: #FFF;
   position: relative;
   height: 218vh;
@@ -872,6 +872,10 @@ section {
   text-transform: capitalize;
   margin: 8px 0 0 10px;
   color: #FFF;
+}
+.iphone img {
+  width: 90%;
+  margin-left: 5%;
 }
 
 .blockchain .content p {
