@@ -439,7 +439,7 @@ h1, h2, h3, h4, h5, h6 {
 .vertical a {
   color: #FFF;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 @media (max-width: 768px) {
@@ -1023,6 +1023,9 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+.team {
+  background: url("../img/faq_top_bg.jpg")  bottom center no-repeat;
+}
 .team .member {
   position: relative;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -1128,7 +1131,6 @@ section {
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq {
-  background: url("../img/faq_top_bg.jpg") top center no-repeat;
   background-color: rgba(24, 78, 174, 0.03);
 }
 .faq .faq-list {
