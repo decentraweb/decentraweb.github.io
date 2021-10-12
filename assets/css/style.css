@@ -784,14 +784,29 @@ section {
 # Why Us
 --------------------------------------------------------------*/
 .solution {
-  background: url("../img/how_its_works.png") 2px 85% no-repeat, url("../img/union.jpg") top center no-repeat;
-  background-size: 150px 464px, cover;
+  background: url("../img/union.jpg") top center no-repeat;
+  background-size: cover;
   padding: 120px 0 80px 0;
   color: #FFF;
   position: relative;
   height: 218vh;
   display: flex;
   align-items: center;
+}
+.solution:before {
+  content: 'how it works';
+    position: absolute;
+    bottom: 24%;
+    left: -145px;
+    z-index: 0;
+    font-size: 104px;
+    transform: rotate(-90deg);
+    font-family: 'Montserrat';
+    font-weight: bold;
+    width: 450px;
+    line-height: 88px;
+    text-transform: capitalize;
+    opacity: 0.1;
 }
 
 .solution .content {
@@ -955,6 +970,9 @@ section {
     height: auto;
     display: block;
     align-items: center;
+  }
+  .solution:before{
+    display: none;
   }
   .solution h1{
     font-size: 64px;
