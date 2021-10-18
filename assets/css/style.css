@@ -16,8 +16,8 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+h1, h2, h3, h4, h5, h6, p, span, div, a {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -164,12 +164,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0 10px 24px;
 }
 .navbar a, .navbar a:focus {
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 3px;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 1);
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -356,49 +357,45 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #dweb {
   width: 100%;
-  height: 120vh;
   overflow: hidden;
   position: relative;
   background: url("../img/globe.png") bottom right no-repeat, url("../img/top_bg.jpg") bottom center no-repeat, linear-gradient(261.51deg, #7E02DF -31.95%, #1E21AB 79.36%) top center;
   background-size: 50%, cover, cover;
-  /* background: linear-gradient(261.51deg, #7E02DF -31.95%, #1E21AB 79.36%); */
-  mix-blend-mode: normal;
   position: relative;
   z-index: 99;
   transition: 0.3s;
+  padding: 160px 0 160px 30px;
 }
 #dweb .title {
-  font-family: 'Montserrat';
   font-style: normal;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
+  font-weight: 300;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin: 0 0 0 3px;
 }
 #dweb .title span {
   font-weight: bold;
 }
 #dweb h2 {
   color: #fff;
-  margin-bottom: 30px;
-  font-size: 60px;
-  line-height: 65px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  line-height: 54px;
   font-weight: 700;
-  font-family: 'Montserrat';
   letter-spacing: 2px;
 }
 #dweb h2 span {
-  font-family: 'Montserrat';
   font-weight: 300;
   font-size: 48px;
 }
 #dweb .description{
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 20px;
   color: #FFFFFF;
 }
 #dweb .registration {
@@ -407,18 +404,19 @@ h1, h2, h3, h4, h5, h6 {
 #dweb .registration a{
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 3px;
-  padding: 20px 55px !important;
-  height: 64px;
+  letter-spacing: 2px;
+  padding: 15px 25px !important;
+  height: 55px;
   line-height: 25px; 
+  margin-left: 5px;
 }
-#dweb .registration a:last-child {
-  margin-left: 10px;
+#dweb .registration a:first-child {
+  margin-left: 0;
 }
 
 .social-g{
   position: absolute;
-  left: 20px;
+  left: 30px;
   top: 0;
   z-index: 1;
 }
@@ -441,21 +439,72 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   font-size: 24px;
 }
+@media (max-width: 1400px) {
+  #dweb h2 {
+    font-size: 44px;
+    line-height: 48px;
+    line-height: 1;
+  }
+}
+@media (max-width: 1280px) {
+  #dweb {
+    padding: 130px 0 130px 30px;
+  }
+  #dweb h2 {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+  #dweb h2 span {
+    font-weight: 300;
+    font-size: 36px;
+  }
+  #dweb .registration a{
+    padding: 16px 25px !important;
+    height: 52px;
+    line-height: 20px;
+  }
 
+}
+@media (max-width: 992px) {
+  #dweb {
+    padding: 80px 0 24px 0;
+  }
+  #dweb h2 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  #dweb h2 span {
+    font-weight: 300;
+    font-size: 24px;
+  }
+  #dweb .registration a {
+    padding: 16px 20px !important;
+    height: 52px;
+    line-height: 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  #dweb .registration a:last-child {
+    margin-left: 0px;
+  }
+  .social-g{
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   #dweb {
-    height: 120vh;
-    padding: 100px 0 140px;
+    padding: 90px 30px 120px;
     background: url("../img/top_bg.jpg") bottom left no-repeat, linear-gradient(261.51deg, #7E02DF -31.95%, #1E21AB 79.36%) top center;
     background-size: cover, cover;
   }
   #dweb h2 {
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 2px;
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    margin-top: 5px;
   }
   #dweb h2 span {
-    font-size: 40px;
+    font-size: 26px;
   }
   .registration a{
     margin: 10px auto;
@@ -467,6 +516,10 @@ h1, h2, h3, h4, h5, h6 {
   }
   #dweb .registration a:last-child {
     margin-left: 0px;
+  }
+  #dweb .description{
+    font-size: 16px;
+    line-height: 20px;
   }
   .social-g{
     display: none;
@@ -481,10 +534,6 @@ section {
   overflow: hidden;
 }
 
-.section-bg {
-  background-color: #f1f8ff;
-}
-
 .section-title h6 {
   font-size: 14px;
   line-height: 20px;
@@ -492,11 +541,9 @@ section {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #161616;
-  font-family: 'Montserrat';
   font-weight: bold;;
 }
 .section-title h2 {
-  font-family: 'Montserrat';
   font-size: 34px;
   line-height: 41px;
   text-transform: capitalize;
@@ -513,10 +560,9 @@ section {
   margin-bottom: 5px;
 }
 .section-title p {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 24px;
   text-align: center;
   text-transform: capitalize;
@@ -545,13 +591,15 @@ section {
     font-size: 18px;
     line-height: 30px;
   }
+  .section-title p br {
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------
 # Partners
 --------------------------------------------------------------*/
 .partners .gray-title {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -619,6 +667,7 @@ section {
   z-index: 100;
   background: url("../img/problem_top_bg.jpg") top center no-repeat;
   background-color: rgba(24, 78, 174, 0.03);
+  background-size: 100%;
 }
 .problem .content {
   padding: 40px 150px;
@@ -636,7 +685,6 @@ section {
 }
 .problem .content p{
   color: rgba(22, 22, 22, 0.7);
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -653,11 +701,9 @@ section {
   color: rgba(22, 22, 22, 0.5);
   float: right;
   margin-top: 8px;
-  font-family: 'Montserrat';
 }
 .problem .title a {
   color: #161616;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -665,7 +711,6 @@ section {
   letter-spacing: -0.01em;
 }
 .problem .description {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -673,8 +718,18 @@ section {
   color: rgba(22, 22, 22, 0.6);
 }
 @media (max-width: 768px) {
+  .problem {
+    padding-top: 80px;
+  }
   .problem .content {
-    padding: 40px 10px;
+    padding: 20px 10px;
+  }
+  .problem .content p{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .problem .content p br {
+    display: none;
   }
 }
 /*--------------------------------------------------------------
@@ -682,7 +737,6 @@ section {
 --------------------------------------------------------------*/
 .about {
   padding: 10px 0;
-  background: url("../img/about-bg.png") top center no-repeat;
   position: relative;
 }
 .about:before {
@@ -706,6 +760,7 @@ section {
 }
 .about .block {
   height: 145px;
+  margin-top: 15px;
 }
 .about .block .shadow-circle {
   height: 100px;
@@ -719,14 +774,12 @@ section {
   display: none;
 }
 .about .block h6 {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
 }
 .about .block p {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -734,7 +787,7 @@ section {
   color: rgba(22, 22, 22, 0.6);
 }
 .about .block.btm {
-  margin-top: 150px;
+  margin-top: 190px;
 }
 .dweb-logo{
   margin: 30px auto 60px;
@@ -747,7 +800,28 @@ section {
   border-radius: 50%;
   text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
+  .about .block.btm {
+    margin-top: 145px;
+  }
+  .about .block h6 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .about .block p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1200px) {
+  .about .block.btm {
+    margin-top: 100px;
+  }
+  .about .block h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 992px) {
   .about {
     padding: 60px 0;
   }
@@ -784,36 +858,34 @@ section {
 # Why Us
 --------------------------------------------------------------*/
 .solution {
-  background: url("../img/union.jpg") top center no-repeat;
-  background-size: cover;
-  padding: 120px 0 80px 0;
+  background: url("../img/solution_top.png") top center no-repeat, url("../img/solution_bottom.png") bottom -1px center no-repeat, linear-gradient(245.74deg, #7E02DF 18.81%, #1E21AB 38.88%, #02047A 73.31%);
+  background-size: 100%;
+  padding: 60px 0 100px 0;
   color: #FFF;
   position: relative;
-  height: 218vh;
   display: flex;
   align-items: center;
 }
 .solution:before {
   content: 'how it works';
-    position: absolute;
-    bottom: 24%;
-    left: -145px;
-    z-index: 0;
-    font-size: 104px;
-    transform: rotate(-90deg);
-    font-family: 'Montserrat';
-    font-weight: bold;
-    width: 450px;
-    line-height: 88px;
-    text-transform: capitalize;
-    opacity: 0.1;
+  position: absolute;
+  bottom: 24%;
+  left: -145px;
+  z-index: 0;
+  font-size: 104px;
+  transform: rotate(-90deg);
+  font-family: 'Montserrat';
+  font-weight: bold;
+  width: 450px;
+  line-height: 88px;
+  text-transform: capitalize;
+  opacity: 0.1;
 }
 
 .solution .content {
   padding: 0px 10px 0 10px;
 }
 .solution h1 {
-  font-family: 'Montserrat';
   margin-top: 40px;
   font-size: 140px;
   line-height: 120px;
@@ -832,7 +904,6 @@ section {
   margin-top: 5px;
 }
 .solution .content p {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -841,7 +912,6 @@ section {
   color: rgba(255, 255, 255, 0.7);
 }
 .solution h5 {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -850,7 +920,6 @@ section {
 }
 .solution .quote {
   margin-left: 60px;
-  font-family: 'Montserrat';
   font-style: italic;
   font-weight: normal;
   font-size: 20px;
@@ -859,7 +928,6 @@ section {
   position: relative;
 }
 .solution .quote span {
-  font-family: 'Montserrat';
   font-style: italic;
   font-weight: normal;
   font-size: 24px;
@@ -879,7 +947,6 @@ section {
 }
 .quoteby span{
   float: left;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -894,7 +961,6 @@ section {
 }
 
 .blockchain .content p {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -904,7 +970,6 @@ section {
   width: 80%;
 }
 .blockchain .title h6 {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -913,7 +978,6 @@ section {
   text-transform: uppercase;
 }
 .blockchain h2{
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
@@ -951,12 +1015,16 @@ section {
   background: #FFF;
   float: left;
 }
+.wt-circle i {
+  font-size: 28px;
+  color: #2998F9;
+  margin-left: 3px;
+}
 .points span {
   float:left;
-  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 15px;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.7);
   width: calc(100% - 100px);
@@ -967,9 +1035,10 @@ section {
 }
 @media (max-width: 768px) {
   .solution{
-    height: auto;
+    background: url("../img/solution_top.png") top center no-repeat, url("../img/solution_bottom.png") bottom center no-repeat, linear-gradient(34.51deg, #7E02DF 4.58%, #1E21AB 16.93%, #02047A 55.57%);
+    background-size: contain contain 100%;
     display: block;
-    align-items: center;
+    padding-top: 0;
   }
   .solution:before{
     display: none;
@@ -1018,7 +1087,6 @@ section {
     text-align: center;
   }
   .blockchain h4{
-    font-family: 'Montserrat';
     font-size: 34px !important;
     font-weight: bold;
     line-height: 41px;
@@ -1031,7 +1099,7 @@ section {
   }
   .blockchain .registration a{
     font-size: 16px;
-    padding: 40px 60px !important;
+    padding: 30px 10px !important;
     height: 50px;
     line-height: 4px !important; 
     width: 100%;
@@ -1050,10 +1118,8 @@ section {
 }
 .team .member {
   position: relative;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
   border-radius: 10px;
-  background: #fff;
   flex-direction: column;
   margin-bottom: 10px;
 }
@@ -1108,24 +1174,23 @@ section {
 #tokenomics {
   background: url("../img/left_bg_curve.jpg") top left no-repeat;
   background-size: contain;
+  padding-bottom: 0;
 }
 .tokenomics .content {
-  padding: 100px 20px;
+  padding: 100px 0px;
 }
 .tokenomics .content h3 {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
-  font-size: 34px;
-  line-height: 41px;
+  font-size: 28px;
+  line-height: 38px;
   color: #161616;
 }
 .tokenomics .content p {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 15px;
+  line-height: 24px;
   text-transform: capitalize;
   color: #737373;
   width: 70%;
@@ -1133,6 +1198,7 @@ section {
 #fees {
   background: url("../img/right_bg_curve.jpg") top right no-repeat;
   background-size: contain;
+  padding-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -1178,10 +1244,9 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: #161616;
   padding-right: 22px;
@@ -1201,12 +1266,11 @@ section {
 }
 .faq .faq-list p {
   margin-bottom: 0;
-  padding: 35px 0 0 0;
-  font-family: 'Montserrat';
+  padding: 25px 0 0 0;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 15px;
+  line-height: 24px;
   text-transform: capitalize;
   color: #161616;
   opacity: 0.7;
@@ -1268,9 +1332,10 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: url("../img/footer_top_bg1.png") top center no-repeat, linear-gradient(260.25deg, #7E02DF 9.87%, #1E21AB 32.49%, #02047A 71.29%);
+  background-size: 100%;
   mix-blend-mode: normal;
   transform: matrix(1, 0, 0, 1, 0, 0);
-  padding: 90px 0 40px 0;
+  padding: 250px 0 40px 0;
   color: #fff;
   font-size: 14px;
 }
@@ -1293,7 +1358,6 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   margin-top: 20px;
-  font-family: 'Montserrat';
   color: rgba(255, 255, 255, 0.7);
 }
 #footer .link-section{
@@ -1320,7 +1384,6 @@ section {
 }
 #footer .footer-top .footer-links h4{
   text-transform: uppercase;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1354,7 +1417,6 @@ section {
   color: rgba(255, 255, 255, 0.7);
   transition: 0.3s;
   display: inline-block;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -1371,7 +1433,6 @@ section {
   line-height: 26px;
 }
 .footer-contact h2{
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1877,7 +1938,6 @@ section {
   width: 100%;
   margin: 40px 0 0;
   text-align: center;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -1887,7 +1947,6 @@ section {
 }
 
 .modal-header h5 {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1909,7 +1968,6 @@ section {
   padding-top: 5px;
 }
 .modal-body p{
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -1934,6 +1992,14 @@ section {
     line-height: 20px;
   }
 
+}
+
+/* customize swiper */
+.swiper-wrapper.disabled {
+  transform: translate3d(0px, 0, 0) !important;
+}
+.swiper-pagination.disabled {
+  display: none;
 }
 
 
