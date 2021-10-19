@@ -1124,6 +1124,7 @@ section {
 --------------------------------------------------------------*/
 .team {
   background: url("../img/faq_top_bg.jpg")  bottom center no-repeat;
+  background-size: 100%;
 }
 .team .member {
   position: relative;
