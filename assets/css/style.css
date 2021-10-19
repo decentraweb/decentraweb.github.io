@@ -370,7 +370,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a {
   position: absolute;
   z-index: -1;
   bottom: 4px;
-  height: 100%;
+  height: 95%;
   width: 50%;
   display: block;
   right: 0;
