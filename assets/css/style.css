@@ -359,12 +359,21 @@ h1, h2, h3, h4, h5, h6, p, span, div, a {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: url("../img/globe.png") bottom right no-repeat, url("../img/top_bg.jpg") bottom center no-repeat, linear-gradient(261.51deg, #7E02DF -31.95%, #1E21AB 79.36%) top center;
-  background-size: 50%, cover, cover;
+  background: url("../img/top_bg.jpg") bottom center no-repeat, linear-gradient(261.51deg, #7E02DF -31.95%, #1E21AB 79.36%) top center;
+  background-size: cover, cover;
   position: relative;
   z-index: 99;
   transition: 0.3s;
   padding: 160px 0 160px 30px;
+}
+.globe {
+  position: absolute;
+  z-index: -1;
+  bottom: 4px;
+  height: 100%;
+  width: 50%;
+  display: block;
+  right: 0;
 }
 #dweb .title {
   font-style: normal;
