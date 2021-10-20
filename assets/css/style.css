@@ -869,7 +869,7 @@ section {
 .solution {
   background: url("../img/solution_top.png") top center no-repeat, url("../img/solution_bottom.png") bottom -1px center no-repeat, linear-gradient(245.74deg, #7E02DF 18.81%, #1E21AB 38.88%, #02047A 73.31%);
   background-size: 100%;
-  padding: 60px 0 100px 0;
+  padding: 60px 0 120px 0;
   color: #FFF;
   position: relative;
   display: flex;
@@ -1128,7 +1128,7 @@ section {
 }
 .team .member {
   position: relative;
-  padding: 30px;
+  padding: 30px 30px 0 30px;
   border-radius: 10px;
   flex-direction: column;
   margin-bottom: 10px;
