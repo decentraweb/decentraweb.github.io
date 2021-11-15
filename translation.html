@@ -70,12 +70,11 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-        <select id="langChanger" onchange="changeLang(this)">
-          <option value="en">EN</option>
-          <option value="ch">CH</option>
-        </select>
-        <!-- <a href="#" style="color:#fff;" onclick="window.lang.change('en'); return false;">English</a> | 
-        <a href="#" style="color:#fff;" onclick="window.lang.change('ch'); return false;">Chinese</a> -->
+      <div id="langChanger" style="color:#fff;">
+       
+        <a href="#" style="color:#fff;" onclick="window.lang.change('en'); return false;">English</a> | 
+        <a href="#" style="color:#fff;" onclick="window.lang.change('ch'); return false;">Chinese</a>
+      </div>
 
     </div>
 
@@ -1098,11 +1097,6 @@
        */
       allowCookieOverride: true
     });
-
-    function changeLang(lang){
-      window.lang.change(lang.value);
-      return false;
-    }
   </script>
 
 </body>
