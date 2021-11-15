@@ -62,18 +62,20 @@
           <li><a class="nav-link scrollto active" href="#about" lang="en">what is decentraweb</a></li>
           <li><a class="nav-link scrollto" href="#solution" lang="en">Solution</a></li>
           <li><a class="nav-link scrollto" href="#how" lang="en">How it works</a></li>
-          <li><a class="nav-link scrollto " href="#roadmap" lang="en">RoadMap</a></li>
-          <li><a class="nav-link scrollto" href="#tokenomics" lang="en">Tokenomics</a></li>
+          <li><a class="nav-link scrollto " href="#roadmap" lang="en">roadmap</a></li>
+          <li><a class="nav-link scrollto" href="#tokenomics" lang="en">tokenomics</a></li>
           <li><a class="nav-link scrollto" href="#team" lang="en">Team</a></li>
           <li><a class="nav-link scrollto" href="https://staking.decentraweb.org" lang="en">Staking</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <div id="langChanger" style="color:#fff;">
-        <a href="#" style="color:#fff;" onclick="window.lang.change('en'); return false;">English</a> | 
-        <a href="#" style="color:#fff;" onclick="window.lang.change('ch'); return false;">Chinese</a>
-      </div>
+        <select id="langChanger" onchange="changeLanguage(this)">
+          <option value="en">EN</option>
+          <option value="ch">CH</option>
+        </select>
+        <!-- <a href="#" style="color:#fff;" onclick="window.lang.change('en'); return false;">English</a> | 
+        <a href="#" style="color:#fff;" onclick="window.lang.change('ch'); return false;">Chinese</a> -->
 
     </div>
 
@@ -95,7 +97,7 @@
     <div class="container">
         <div class="row">
           <div class="col-md-10 align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-            <p class="title" lang="en"><span>DecentraWeb</span> is a decentralized</p>
+            <p class="title"><span lang="en">DecentraWeb</span><span lang="en"> is a decentralized</span></p>
             <h2><span>Implementation <br>of the</span> DNS base <br>
               layer protocol on the <br>
               Ethereum Blockchain.</h2>
@@ -215,7 +217,7 @@
         </div>
 
         <div class="content">
-          <p lang="en" data-lang-token="problem_solution_1">Since the creation of the internet we’ve built some of our greatest inventions on it.  But somewhere <br>along the way, we’ve gone off course.</p>
+          <p lang="en" data-lang-token="problem_solution_1">Since the creation of the internet we've built some of our greatest inventions on it.  But somewhere <br>along the way, we've gone off course.</p>
           <p lang="en" data-lang-token="problem_solution_2">This has resulted in a centralized internet where a few gatekeepers such as tech companies and others<br> have unprecedented power.</p>
           <p lang="en" data-lang-token="problem_solution_3">Everyone’s online actions are tracked and censorship is rampant. At the flick of a switch, an entire<br> company or individual’s online presence can be deleted.</p>
           <p lang="en" data-lang-token="problem_solution_4">This can happen for political reasons, or simply because one company does not agree with another’s<br> business practices.</p>
@@ -450,15 +452,18 @@
         <div class="section-title">
           <h6 lang="en">About Our</h6>
           <div class="headline">&nbsp;</div>
-          <h2 lang="en">Tokenomics</h2>
-          <p lang="en">The DWEB token will play a crucial role in the DecentraWeb ecosystem, and will be used<br> for payment for products &amp; services, governance, DNS Validator Nodes, Staking & more.</p>
+          <h2 lang="en">tokenomics</h2>
+          <p>
+            <span lang="en" data-lang-token="tokenomics_p1">The DWEB token will play a crucial role in the DecentraWeb ecosystem, and will be used</span><br>
+            <span lang="en" data-lang-token="tokenomics_p2"> for payment for products &amp; services, governance, DNS Validator Nodes, Staking & more.</span>
+          </p>
         </div>
 
         <div class="row">
           <div class="col-md-5 offset-md-1 order-md-2">
             <div class="content">
               <h3 lang="en">DWEB Token</h3>
-              <p lang="en">The proceeds for all domain, hosting, and other sales of products and services will be distributed as follows:</p>
+              <p lang="en" data-lang-token="dweb_token_desc">The proceeds for all domain, hosting, and other sales of products and services will be distributed as follows:</p>
             </div>
           </div>
           <div class="col-md-5 offset-md-1 order-md-1">
@@ -503,8 +508,13 @@
         <div class="section-title">
           <h6 lang="en">Our</h6>
           <div class="headline">&nbsp;</div>
-          <h2 lang="en">Team</h2>
-          <p lang="en">We have built an executive and advisory team with extensive experience in the<br> domain, DNS, security and blockchain space with team members hailing from<br> GoDaddy, Intel, Dow Jones, Microsoft, Dell, ServiceNow, Bloomberg, HP,<br> T-Mobile, TrustSwap, Coin Market Cap (CMC) &amp; others.</p>
+          <h2 lang="en">team</h2>
+          <p lang="en">
+            <span lang="en" data-lang-token="team_desc_1">We have built an executive and advisory team with extensive experience in the</span><br>
+            <span lang="en" data-lang-token="team_desc_2"> domain, DNS, security and blockchain space with team members hailing from</span><br> 
+            <span lang="en" data-lang-token="team_desc_3"> GoDaddy, Intel, Dow Jones, Microsoft, Dell, ServiceNow, Bloomberg, HP,</span><br>
+            <span lang="en" data-lang-token="team_desc_4"> T-Mobile, TrustSwap, Coin Market Cap (CMC) &amp; others.</span>
+          </p>
         </div>
 
         <div class="row">
@@ -1088,6 +1098,10 @@
        */
       allowCookieOverride: true
     });
+
+    function changeLanguage(lang){
+      window.lang.change(lang.value);
+    }
   </script>
 
 </body>

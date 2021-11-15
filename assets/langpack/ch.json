@@ -7,6 +7,9 @@
 		"tokenomics": "通证经济",
 		"team": "团队",
 		"staking": "质押",
+		"DecentraWeb": "DecentraWeb",
+		"is a decentralized": "是对",
+		"DNS": "DNS 基层协议在以太坊区块链上的去中心化实施",
 		"Committed to taking back the internet, one layer at a time...": "致力于逐层夺回互联网......",
 		"partnerships": "合作伙伴",
 		"about": "关于",
@@ -63,8 +66,16 @@
 		"Q3 2022": "2022 年第 3 季度",
 		"Q32022_desc": "DecentraMail 在 IPFS 上发布，使用户可以在他们的 DecentraName 上存储邮件（webmail、IMAP 等）",
 		"Q4 2022": "2022 年第 4 季度",
-		"Q42022_desc": "DecentraPlace，发布最大的二级市场即 NFT 域名交易集市并使用户能以最低的成本购买和出售任何 NFT TLD 或 SLD"
-
+		"Q42022_desc": "DecentraPlace，发布最大的二级市场即 NFT 域名交易集市并使用户能以最低的成本购买和出售任何 NFT TLD 或 SLD",
+		"About Our": "关于我们的",
+		"tokenomics_p1": "DWEB 代币将在 DecentraWeb 生态系统中起到至关重要的作用，且将被用来",
+		"tokenomics_p2": "支付产品和服务、治理、DNS 验证器节点、质押及更多的费用.",
+		"DWEB Token": "DWEB 代币",
+		"dweb_token_desc": "所有域名、存储和其他产品及服务的销售收入将按照如下方式分配:",
+		"team_desc_1": "我们已建立执行和顾问团队，他们在",
+		"team_desc_2": "域名、DNS、安全性和区块链领域拥有丰富且广泛的经验，团队成员来自",
+		"team_desc_3": "GoDaddy、Intel、Dow Jones、Microsoft、Dell、ServiceNow、Bloomberg、HP",
+		"team_desc_4": "T-Mobile、TrustSwap、Coin Market Cap (CMC) 及其他知名企业",
 	},
 	"regex": []
 }

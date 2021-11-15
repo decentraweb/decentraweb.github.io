@@ -385,7 +385,7 @@ h1, h2, h3, h4, h5, h6, p, span, div, a {
   color: #FFFFFF;
   margin: 0 0 0 3px;
 }
-#dweb .title span {
+#dweb .title span:first-child {
   font-weight: bold;
 }
 #dweb h2 {
@@ -1012,7 +1012,6 @@ section {
   width: 100%;
   float: left;
   margin: 10px 0;
-  display: flex;
   align-items: center;
 }
 .wt-circle {
@@ -1037,7 +1036,7 @@ section {
   line-height: 24px;
   color: rgba(255, 255, 255, 0.7);
   width: calc(100% - 100px);
-  margin: 8px 10px;
+  margin: 0px 10px;
 }
 .blockchain .registration{
   margin-top: 40px;

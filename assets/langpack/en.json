@@ -7,6 +7,9 @@
 		"tokenomics": "Tokenomics",
 		"team": "Team",
 		"staking": "Staking",
+		"DecentraWeb": "DecentraWeb",
+		"is a decentralized": "is a decentralized",
+		"DNS": "Implementation of the DNS base layer protocol on the Ethereum Blockchain.",
 		"Committed to taking back the internet, one layer at a time...": "Committed to taking back the internet, one layer at a time...",
 		"partnerships": "Partnerships",
 		"about": "about",
@@ -63,7 +66,16 @@
 		"Q3 2022": "Q3 2022",
 		"Q32022_desc": "DecentraMail launch on IPFS allowing users to host mail (webmail, IMAP,etc) on their DecentraName",
 		"Q4 2022": "Q4 2022",
-		"Q42022_desc": "DecentraPlace, the largest aftermarket NFT domain marketplace launches and allows users to buy & sell any NFT TLD or SLD for minimal costs."
-	},
+		"Q42022_desc": "DecentraPlace, the largest aftermarket NFT domain marketplace launches and allows users to buy & sell any NFT TLD or SLD for minimal costs.",
+		"About Our": "About Our",
+		"tokenomics_p1": "The DWEB token will play a crucial role in the DecentraWeb ecosystem, and will be used",
+		"tokenomics_p2": "for payment for products & services, governance, DNS Validator Nodes, Staking & more.",
+		"DWEB Token": "DWEB Token",
+		"dweb_token_desc": "The proceeds for all domain, hosting, and other sales of products and services will be distributed as follows:",
+		"team_desc_1": "We have built an executive and advisory team with extensive experience in the",
+		"team_desc_2": "domain, DNS, security and blockchain space with team members hailing from",
+		"team_desc_3": "GoDaddy, Intel, Dow Jones, Microsoft, Dell, ServiceNow, Bloomberg, HP,",
+		"team_desc_4": "T-Mobile, TrustSwap, Coin Market Cap (CMC) & others.",
+ 	},
 	"regex": []
 }
