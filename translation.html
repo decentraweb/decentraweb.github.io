@@ -70,7 +70,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-        <select id="langChanger" onchange="changeLanguage(this)">
+        <select id="langChanger" onchange="changeLang(this)">
           <option value="en">EN</option>
           <option value="ch">CH</option>
         </select>
@@ -1099,8 +1099,9 @@
       allowCookieOverride: true
     });
 
-    function changeLanguage(lang){
+    function changeLang(lang){
       window.lang.change(lang.value);
+      return false;
     }
   </script>
 
