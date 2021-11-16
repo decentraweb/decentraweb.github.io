@@ -111,7 +111,19 @@
 		"faq_ans7_p3": "We cannot risk having DNS go down (for instance like Solana's 20 hour downtime), or being centralized (like BSC, where Binance and many Chinese entities run the nodes) and censored.",
 		"faq_que8": "Can I register top domains like .apple, .tesla, etc?",
 		"faq_ans8_p1": "Current top domain names (like apple.com, youtube.com, facebook.com, etc) will be restricted from registration unless user can prove they own the ICANN version. If you try to register .facebook for instance, the smart contract will verify you own the domain by asking you to add a TXT record to facebook.com DNS with a random string we provide you. If you can't update the existing DNS record, registration won't continue.",
-		"faq_ans8_p2": "This way we can avoid people squatting on top domains, and it also gives us a way to work with top brands/companies etc and get them into our ecosystem!"
+		"faq_ans8_p2": "This way we can avoid people squatting on top domains, and it also gives us a way to work with top brands/companies etc and get them into our ecosystem!",
+		"Useful Links": "Useful Links",
+		"decentralized": "DecentraWeb is a decentralized implementation of the DNS base layer protocol on the Ethereum Blockchain",
+		"Home": "Home",
+		"Solution": "Solution",
+		"What Is DecentraWeb": "Decentraweb 是什么",
+		"Deck": "Deck",
+		"Follow Us On": "Follow Us On",
+		"Disclaimer": "Disclaimer",
+		"Disclaimer_text": "The user of this website acknowledges and agrees that Decentraweb is a decentralized website and has no control over, and shall have no responsibility for, the names and contents of other domains, and accordingly releases and discharges Decentraweb from any and all claims, demands, actions and rights of action, present, past and future, that it has, has had and/or may in the future have relating directly or indirectly to the names and/or contents of other domains.",
+		"copyright": "Copyright © 2021, DecentraWeb. All Rights Reserved.",
+		"Privacy Policy": "Privacy Policy",
+		"Terms Of Use": "Terms Of Use"
 
  	},
 	"regex": []

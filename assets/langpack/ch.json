@@ -111,7 +111,19 @@
 		"faq_ans7_p3": "我们不能冒让 DNS 脱机（如 Solana 宕机20小时的事故），或被中心化（如 BSC，Binance 和很多中国机构运行节点）及被审查的风险.",
 		"faq_que8": "我可以注册像  .apple、.tesla 这样的顶级域名吗?",
 		"faq_ans8_p1": "目前顶级域名（如 apple.com、youtube.com、facebook.com 等）的注册是受到限制的，除非用户可以证明他们拥有 ICANN 的域名版本。比如说，如果您尝试注册 .facebook，智能合约将会要求您向 .facebook DNS 中添加一条 TXT 记录以及我们提供给您的一条随机字符串，以验证您是否拥有此域名。如果您无法更新现有的 DNS 记录，则注册将无法继续进行.",
-		"faq_ans8_p2": "通过这种方法，我们可以避免人们擅自占用顶级域名，同时为我们提供了与知名品牌/公司等合作并让他们进入我们生态系统的方法."
+		"faq_ans8_p2": "通过这种方法，我们可以避免人们擅自占用顶级域名，同时为我们提供了与知名品牌/公司等合作并让他们进入我们生态系统的方法.",
+		"Useful Links": "有用链接",
+		"decentralized": "DecentraWeb 是对 DNS 基层协议在以太坊区块链上的去中心化实施",
+		"Home": "首页",
+		"Solution": "解决方案",
+		"What Is DecentraWeb": "Decentraweb 是什么",
+		"Deck": "Deck",
+		"Follow Us On": "关注我们",
+		"Disclaimer": "免责声明",
+		"Disclaimer_text": "本网站的用户承认并同意 Decentraweb 是去中心化的网站且对其他域名的名称和内容没有控制权且不承担任何责任，因此免除对 Decentraweb 的任何和所有索赔、要求、诉讼和诉讼权，无论在现在、过去和将来，Decentraweb 直接或间接地有、已有和/或在将来可能与其他域名的名称和/或内容有关.",
+		"copyright": "版权所有 © 2021，DecentraWeb. 保留所有权利.",
+		"Privacy Policy": "隐私政策",
+		"Terms Of Use": "和使用条款"
 	},
 	"regex": []
 }
