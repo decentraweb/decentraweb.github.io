@@ -702,7 +702,7 @@
 		
 		if (!translation && !langIsDefault) {
 			if (console && console.log) {
-				console.log("Translation for \"" + text + "\" not found in language pack: " + lang);
+				// console.log("Translation for \"" + text + "\" not found in language pack: " + lang);
 			}
 		}
 		
