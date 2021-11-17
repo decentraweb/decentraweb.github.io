@@ -2018,4 +2018,39 @@ section {
   display: none;
 }
 
+.dd-select {
+  background: transparent !important;
+  border: 0 !important;
+  width: 124px !important;
+}
+.dd-selected-image, .dd-option-image{
+  max-width: 24px !important;
+}
+.dd-pointer-up{
+  border-bottom: 5px solid #FFF !important;
+}
+.dd-pointer-down{
+  border-top: 5px solid #FFF !important;
+}
+.dd-selected-text{
+  line-height: 24px !important;
+  color: #FFF;
+  font-size: 13px;
+}
+.dd-option {
+  padding: 5px !important;
+}
+.dd-option-text{
+  line-height:  34px !important;
+}
+.dd-option-image{
+  margin-top: 5px;
+}
 
+@media (max-width: 990px) {
+  #langChanger {
+    position: absolute;
+    top: 13px;
+    right: 140px;
+  }
+}

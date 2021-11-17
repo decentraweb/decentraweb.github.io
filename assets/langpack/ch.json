@@ -80,6 +80,7 @@
 		"team_desc_2": "域名、DNS、安全性和区块链领域拥有丰富且广泛的经验，团队成员来自",
 		"team_desc_3": "GoDaddy、Intel、Dow Jones、Microsoft、Dell、ServiceNow、Bloomberg、HP",
 		"team_desc_4": "T-Mobile、TrustSwap、Coin Market Cap (CMC) 及其他知名企业",
+		"FAQ": "常問問題",
 		"faq_que1": "我们与  Unstoppable Domains、ENS、Handshake 等企业有何不同？",
 		"faq_ans1_p1": "Unstoppable Domains 只允许您在他们现有的 TLD 上注册子域名，他们已为您做出了选择。这种方式是中心化的操作，因为 他们在运营 TLD，然后将所有子域名控制在他们手中",
 		"faq_ans1_p2": "DecentraWeb 允许您注册任何非现有 ICANN TLD 的 TLD（不可以注册 .com、.net、.org 等）",

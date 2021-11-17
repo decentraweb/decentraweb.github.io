@@ -373,7 +373,7 @@
 				}
 			} else {
 				if (console && console.log) {
-					console.log("Translation for \"" + defaultContent + "\" not found!");
+					// console.log("Translation for \"" + defaultContent + "\" not found!");
 				}
 			}
 		}

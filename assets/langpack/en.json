@@ -78,6 +78,7 @@
 		"team_desc_2": "domain, DNS, security and blockchain space with team members hailing from",
 		"team_desc_3": "GoDaddy, Intel, Dow Jones, Microsoft, Dell, ServiceNow, Bloomberg, HP,",
 		"team_desc_4": "T-Mobile, TrustSwap, Coin Market Cap (CMC) & others.",
+		"FAQ": "FAQ",
 		"faq_que1": "How are we different than Unstoppable Domains, ENS, Handshake, etc?",
 		"faq_ans1_p1": "Unstoppable Domains ONLY allows you to register subdomains on their existing TLDs THEY have chosen for you. This is a centralized approach, as they run the TLDs, and subsequently have control of all subdomains under their umbrella.",
 		"faq_ans1_p2": "DecentraWeb allows you to register ANY TLD that isn't already an existing ICANN TLD (can't register .com, .net, .org, etc).",
