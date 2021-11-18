@@ -2018,10 +2018,13 @@ section {
   display: none;
 }
 
+#langChanger {
+  width: 85px !important;
+}
 .dd-select {
   background: transparent !important;
   border: 0 !important;
-  width: 124px !important;
+  width: 100% !important;
 }
 .dd-selected-image, .dd-option-image{
   max-width: 24px !important;
@@ -2032,10 +2035,17 @@ section {
 .dd-pointer-down{
   border-top: 5px solid #FFF !important;
 }
+.dd-selected{
+  width: 80px !important;
+  padding: 10px 5px !important;
+}
 .dd-selected-text{
   line-height: 24px !important;
   color: #FFF;
   font-size: 13px;
+}
+.dd-options {
+  width: 100% !important;
 }
 .dd-option {
   padding: 5px !important;
@@ -2046,6 +2056,8 @@ section {
 .dd-option-image{
   margin-top: 5px;
 }
+
+
 
 @media (max-width: 990px) {
   #langChanger {
