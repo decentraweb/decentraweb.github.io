@@ -2066,6 +2066,10 @@ section {
 
 
 @media (max-width: 990px) {
+  #header .logo object{
+    height: 40px;
+    max-height: 40px;
+  }
   #langChanger {
     position: absolute;
     top: 13px;
