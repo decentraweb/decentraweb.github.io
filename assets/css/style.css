@@ -2046,6 +2046,9 @@ section {
 }
 .dd-options {
   width: 100% !important;
+  border: 0 !important;
+  border-radius: 3px !important;
+  box-shadow: none !important;
 }
 .dd-option {
   padding: 5px !important;
