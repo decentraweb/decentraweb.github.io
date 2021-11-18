@@ -127,8 +127,8 @@ h1, h2, h3, h4, h5, h6, p, span, div, a {
 #header .logo a {
   color: #fff;
 }
-#header .logo img {
-  max-height: 57px;
+#header .logo object {
+  max-height: 50px;
 }
 
 .header-inner-pages {
@@ -2049,6 +2049,9 @@ section {
   border: 0 !important;
   border-radius: 3px !important;
   box-shadow: none !important;
+}
+.dd-options li a:hover {
+  background: #DDD;
 }
 .dd-option {
   padding: 5px !important;
